@@ -2,47 +2,46 @@
 <html>
 <head>
 <title>ENCI MEXICO</title>
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 <header>
 <img src="images/LOG.jpg" id="logo">
 <nav>
 <ul class="nav-links">
-<li><a href="#">INICIO</a></li>
-<li><a href="#">CURSOS DE COMPUTACI&Oacute;N</a></li>
-<li><a href="#">NUESTROS VALORES</a></li>
-<li><a href="#">MISI&Oacute;N Y VISI&Oacute;N</a></li>
-<li><a href="#">UBICACI&Oacute;N</a></li>
-<li><a href="#">CONTACTO</a></li>
+<li><a href="#inicio" id="li1">INICIO</a></li>
+<li><a href="#s2" id="li2">CURSOS DE COMPUTACI&Oacute;N</a></li>
+<li><a href="#s3" id="li3">NUESTROS VALORES</a></li>
+<li><a href="#s4" id="li4">MISI&Oacute;N Y VISI&Oacute;N</a></li>
+<li><a href="#s5" id="li5">UBICACI&Oacute;N</a></li>
+<li><a href="#s6" id="li6">CONTACTO</a></li>
 </ul>
 </nav>
 </header>
+<div id="page-container">
 <!--quienes somos-->
-<section class="primerseccion">
-<div class="quienes">
-<div class="quienes11">
-<img src="images/local.png" alt="local" id="local">
-</div>
-<div class="quienes12">
-<img src="images/sepcondatos.png" id="imagen3">
-</div>
-<div class="quienes13">
-<h2>Quienes somos?</h2>
-</div>
-<div class="quienes22">
+<p id="inicio"></p>
+<section class="inicio1">
+<h1>ENCI</h1>
 <p>La Escuela Nacional de C&oacute;mputo e Inform&aacute;tica de M&eacute;xico (ENCI MEXICO), el Centro de Estudios de C&oacute;mputo e Inform&aacute;tica de M&eacute;xico S.A. de C.V y EL BACHILLERATO TECNOL&Oacute;GICO CECIM, Son Escuelas de prestigio, compitiendo con precios accesibles, profesores altamente capacitados y logrando un Diplomado en Computaci&oacute;n en 1 año y medio. Adem&aacute;s de cursos terminales como capturista de datos, programador en Visual Basic, diseño gr&aacute;fico, diseño de p&aacute;ginas web y operador de equipo de c&oacute;mputo. Instituciones que abren sus puertas debido a la necesidad que existe, de una instituci&oacute;n con la carrera de inform&aacute;tica, en donde el plan de estudio y su programa correspondiente, permitan al estudiante ser incorporado al trabajo desde su ingreso para que aplique la realidad de sus conocimientos que van adquiriendo durante su estancia. Se impone tambi&eacute;n que este estudiante logre un esp&iacute;ritu de creatividad para la soluci&oacute;n de problemas que en base a un estudio minucioso sea capaz de detectar en las empresas en donde presta sus servicios.</td>
 </p>
+<div class="imgContainer">
+<img src="images/enci.webp">
+<img src="images/local.png" alt="local" id="local">
+<img src="images/sepcondatos.png" id="imagen3">
 </div>
-</div>
+</section>
+<!--video-->
+<section>
+<p>Aqu&iacute; va un video</p>
 </section>
 <!--cursos de computacion-->
 <section>
+<h2 id="s2">Nuestros cursos de computaci&oacute;n</h2>
+
 <div class="cursosdecomputacion">
 <div class="cursosdecomputacion11">
-<h2>Nuestros cursos de computaci&oacute;n</h2>
-</div>
-<div class="cursosdecomputacion21">
 <ul>
 <li>Introducci&oacute;n a la computaci&oacute;n</li>
 <li>Windows</li>
@@ -57,11 +56,14 @@
 <li>Autocad</li>
 </ul>
 </div>
-<div class="cursosdecomputacion22">
+<div class="cursosdecomputacion12">
 <img src="images/imagenDeCursos.png" alt="logos de los programas para los que la escuela tiene cursos" id="logos">
 </div>
-<div class="cursosdecomputacion23">
-<table class="tabla">
+</div>
+<h2>Horarios y costos</h2>
+<div class="horariosC">
+<div class="horariosC11">
+<table class="table table-bordered" border="1">
 <thead>
 <tr>
 <th>SEMANAL</th>
@@ -82,11 +84,11 @@
 </tbody>
 </table>
 </div>
-<div class="cursosdecomputacion33">
-<table class="tabla" border="1">
+<div class="horariosC12">
+<table class="table table-bordered" border="1">
 <thead>
 <tr><th colspan="2">COSTOS</th></tr>
-<tr><td><p class="centerText tdataH">Semanal</p></td><td><p class="centerText tdataH">Sabatino</p></td></tr>
+<tr><td class="tdHeader">Semanal</td><td class="tdHeader">Sabatino</td></tr>
 </thead>
 <tbody>
 <tr>
@@ -102,62 +104,55 @@
 </table>
 </div>
 </div>
+<p class="bold">*Inscripciones todo el a&ntilde;o</p>
 </section>
 <!--nuestros valores-->
 <section>
+<h2 id="s3">Nuestros valores</h2>
 <div class="valores">
 <div class="valores11">
-<h2>Nuestros valores</h2>
+<p><span>SERIEDAD:</span> Compromiso y soporte de que nuestros cursos estén avalados por la SEP.</p>
+<p><span>COMPETITIVIDAD:</span> Contar con profesores altamente capacitados.</p>
+<p><span>ACTUALIZACIÓN:</span> Compromiso a estar siempre a la vanguardia en equipo de Cómputo y Paquetería.</p>
+<p><span>PRECIO:</span> Precios competitivos.</p>
+<p><span>GARANTÍA:</span> Cursos comprobados y respaldo de aprendizaje.</p>
+<p><span>HONRADEZ:</span> Compromiso con uno mismo en la capacitación que le está entregando al alumno.</p>
+<p><span>RESPETO Y TOLERANCIA:</span> Comprender al alumno.</p>
+<p><span>PASIÓN:</span> Colocar en nuestros alumnos la cara de nuestros hijos y así poderles dar la mejor enseñanza como quisiéramos que se la dieran a ellos.</p>
 </div>
-<div class="valores21">
-<img src="images/tecleando.jpg" alt="una persona tecleando">
-</div>
-<div class="valores22">
-<p>SERIEDAD: Compromiso y soporte de que nuestros cursos estén avalados por la SEP.</p>
-<p>COMPETITIVIDAD: Contar con profesores altamente capacitados.</p>
-<p>ACTUALIZACIÓN: Compromiso a estar siempre a la vanguardia en equipo de Cómputo y Paquetería.</p>
-<p>PRECIO: Precios competitivos.</p>
-<p>GARANTÍA: Cursos comprobados y respaldo de aprendizaje.</p>
-<p>HONRADEZ: Compromiso con uno mismo en la capacitación que le está entregando al alumno.</p>
-<p>RESPETO Y TOLERANCIA: Comprender al alumno.</p>
-<p>PASIÓN: Colocar en nuestros alumnos la cara de nuestros hijos y así poderles dar la mejor enseñanza como quisiéramos que se la dieran a ellos.</p>
+<div class="valores12">
+<img src="images/engenier.jpg" alt="una persona tecleando" width="100%">
 </div>
 </div>
 </section>
 <!--mision y vision-->
 <section>
+<h2 id="s4">Misi&oacute;n y visi&oacute;n</h2>
 <div class="mision">
 <div class="mision11">
-<h2>Misi&oacute;n y visi&oacute;n</h2>
-</div>
-<div class="mision21">
 <img src="images/misionyvision.png" id="volantemision">
 </div>
-<div class="mision22">
-<h2>Misi&oacute;n</h2>
+<div class="mision12">
+<h3 id="s4">Misi&oacute;n</h2>
 <p>ENCI MÉXICO, Forma parte del sistema de educación que otorga la Secretaría de Educación Pública (SEP), la Dirección General de Centros de Formación para el Trabajo (DGCFT), y la Dirección General de Educación Tecnológica e Industrial (DGETI), que proporciona educación para la vida profesional y cultural a jóvenes y adultos de los más amplios sectores de la sociedad para satisfacer las necesidades de especialización y desarrollo profesional, a través de programas pertinentes, flexibles de calidad y amplia cobertura, en las diferentes modalidades, las cuales tiene un gran vínculo con proveedores de cultura y tecnología.</p>
-<h2>Visi&oacute;n</h2>
+<h3>Visi&oacute;n</h2>
 <p>ENCI MÉXICO, Será un campus de expresión académico cultural de excelencia, por la diversidad de servicios educativos y actividades culturales, nacionales e internacionales que ofrece, las cuales se desarrollan con calidad, profesionalismo y responsabilidad, ya que serán atendidas por personal certificado y de altos valores humanos, representativos de nuestro instituto y con una gran vinculación con proveedores de cultura y tecnología, para hacer frente a las nuevas dinámicas del cambio globalizado.</p>
 </div>
 </div>
 </section>
 <!--ubicacion-->
 <section>
-<div class="ubicacion">
-<div class="ubicacion11">
 <h2>Ubicaci&oacute;n</h2>
+<div class="ubicacion">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.636620389232!2d-99.00673545271366!3d19.400596616649278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e32e87707603%3A0x5b00ab1cd26be81!2sENCI+MEXICO!5e0!3m2!1ses-419!2smx!4v1425791354000" width="700px" height="500px">
+</iframe>
 </div>
-<div class="ubicacion21">
-<p>inserte api correspondiente aqu&iacute;...</p>
-</div>
-<div class="ubicacion31">
 <p>AV. VICENTE VILLADA # 532, COL. BENITO JUÁREZ. CD. NEZAHUALCOYOTL, EDO. DE MÉXICO, CASI ESQUINA CON AV. CHIMALHUACAN, A UN COSTADO DE LA ESTACIÓN: VICENTE VILLADA DEL MEXIBUS, C.P. 57000, TEL. Y FAX 57-31-73-24</p>
-</div>
-</div>
+
 </section>
 <!--contacto-->
 <section>
-<h2>CONTACTO</h2>
+<h2 id="s6">CONTACTO</h2>
 <form>
 <label for="nombre">
 Nombre:
@@ -174,9 +169,8 @@ Asunto:
 <label for="mensaje">
 Mensaje:
 </label>
-<textarea id="mensaje" cols="60" rows="6">
-
-</textarea>
+<textarea id="mensaje" cols="77" rows="6">
+</textarea><br>
 <input type="submit">
 </form>
 </section>
@@ -184,5 +178,6 @@ Mensaje:
 <footer>
 <p>AV. VICENTE VILLADA # 532, COL. BENITO JUÁREZ. CD. NEZAHUALCOYOTL, EDO. DE MÉXICO, CASI ESQUINA CON AV. CHIMALHUACAN, A UN COSTADO DE LA ESTACIÓN: VICENTE VILLADA DEL MEXIBUS, C.P. 57000, TEL. Y FAX 57-31-73-24</p>
 </footer>
+</div>
 </body>
 </html>
